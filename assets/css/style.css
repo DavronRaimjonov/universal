@@ -1,18 +1,108 @@
-/* Error: @use rules must be written before any other rules.
- *   ,
- * 2 | @use "./variable" as var;
- *   | ^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   assets/sass/_global.scss 2:1  @use
- *   assets/sass/style.scss 1:1    root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: @use rules must be written before any other rules.\a   \2577 \a 2 \2502  @use "./variable" as var;\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   assets/sass/_global.scss 2:1  @use\a   assets/sass/style.scss 1:1    root stylesheet';
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
 }
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 90%;
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+button,
+i {
+  cursor: pointer;
+}
+
+.header {
+  padding: 10px 0;
+}
+
+.navbar_top {
+  border-bottom: 1px solid #d9dadb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.navbar_top_item {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 30px;
+}
+.navbar_top_item form {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+.navbar_top_item form input {
+  border: none;
+  outline: none;
+}
+.navbar_top_item form button {
+  border: none;
+  background-color: transparent;
+}
+.navbar_top_travel {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+}
+.navbar_top_travel h2 {
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #262d33;
+}
+.navbar_top_travel p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #939699;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 15px;
+}
+
+.signin {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #4b5157;
+}
+
+.vektors {
+  height: 40px;
+  width: 1px;
+  background-color: #d9dadb;
+}
+
+/*# sourceMappingURL=style.css.map */

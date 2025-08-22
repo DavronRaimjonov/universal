@@ -1,0 +1,64 @@
+@use "./mixns" as *;
+@use "./variable" as *;
+
+.header {
+  padding: 10px 0;
+}
+.navbar {
+  &_top {
+    border-bottom: 1px solid #d9dadb;
+    @include flex(center, space-between, 30px);
+    &_item {
+      @include flex(center, start, 30px);
+      form {
+        @include flex(center, start, 10px);
+
+        input {
+          border: none;
+          outline: none;
+        }
+        button {
+          border: none;
+          background-color: transparent;
+        }
+      }
+    }
+    &_travel {
+      @include flex(center, start, 5px);
+      h2 {
+        font-weight: 900;
+        font-size: 12px;
+        line-height: 1.25;
+        color: #262d33;
+      }
+      p {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.25;
+        color: #939699;
+      }
+    }
+  }
+}
+
+.logo {
+  @include flex(center, start, 15px);
+}
+
+.signin {
+  @include flex(center, start, 10px);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #4b5157;
+}
+
+.vektors {
+  height: 40px;
+  width: 1px;
+  background-color: #d9dadb;
+}
+
+// oldindan reja qildim
+// code yozorodi
+// yana yozadi yozadi
