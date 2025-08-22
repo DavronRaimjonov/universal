@@ -80,6 +80,31 @@ i {
   line-height: 1.25;
   color: #939699;
 }
+.navbar_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding-top: 15px;
+}
+.navbar_bottom h2 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #4b5157;
+}
+.navbar_bottom p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #4b5157;
+}
+.navbar_bottom_item {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 25px;
+}
 
 .logo {
   display: flex;
@@ -103,6 +128,44 @@ i {
   height: 40px;
   width: 1px;
   background-color: #d9dadb;
+}
+
+.weather {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #4b5157;
+}
+
+@media (max-width: 829px) {
+  .navbar_top_item form input {
+    display: none;
+  }
+  .navbar_bottom {
+    flex-direction: column;
+  }
+  .navbar_bottom h2 {
+    display: none;
+  }
+  .navbar_bottom_item {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .logo p {
+    display: none;
+  }
+  .signin p {
+    display: none;
+  }
+}
+@media (max-width: 412px) {
+  .navbar_top img {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
