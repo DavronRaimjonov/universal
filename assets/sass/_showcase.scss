@@ -1,0 +1,130 @@
+@use "./mixns" as *;
+@use "./variable" as *;
+
+.showcase {
+  background: #262d33;
+  padding: 30px 0;
+  &_links {
+    @include flex(center, space-between, 30px);
+    overflow-x: auto;
+    li {
+      text-wrap: nowrap;
+      a {
+        color: #fff;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 1.42857;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+    }
+  }
+  &_bottom {
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    height: 600px;
+    margin-top: 60px;
+  }
+  &_mountain {
+    background: url(../../img/mountain.png);
+    background-size: cover;
+    border-radius: 8px 0 0 8px;
+    &_item {
+      width: 88%;
+      margin: 0 auto;
+      padding: 30px 0;
+      @include flex(start, space-between, 5px);
+      flex-direction: column;
+      height: 100%;
+    }
+  }
+  &_recomended {
+    background-color: #fff;
+    border-radius: 0 8px 8px 0;
+  }
+}
+
+.avatar {
+  @include flex(center, flex-start, 5px);
+  h2 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #fff;
+  }
+  p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    color: #fff;
+  }
+}
+
+.destinations {
+  h2 {
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #4592ff;
+    padding-bottom: 10px;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+    width: 70%;
+    margin-bottom: 20px;
+  }
+  button {
+    background: #4592ff;
+    @include flex(center, center, 5px);
+    color: #fff;
+    border: none;
+    width: 138px;
+    height: 40px;
+    border-radius: 20px;
+  }
+}
+.play_buttons {
+  @include flex(center, start, 50px);
+}
+.play {
+  @include flex(center, start, 20px);
+  h3 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #fff;
+  }
+  p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    color: #fff;
+    opacity: 0.4;
+  }
+}
+
+
+.showcase_recomended {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+@media (max-width: 1000px) {
+    .showcase {
+      &_bottom {
+        width: 100%;
+        grid-template-columns: 100%;
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    .showcase_recomended {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+  }

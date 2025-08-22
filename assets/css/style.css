@@ -167,5 +167,148 @@ i {
     display: none;
   }
 }
+.showcase {
+  background: #262d33;
+  padding: 30px 0;
+}
+.showcase_links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  overflow-x: auto;
+}
+.showcase_links li {
+  text-wrap: nowrap;
+}
+.showcase_links li a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.42857;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.showcase_bottom {
+  width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  height: 600px;
+  margin-top: 60px;
+}
+.showcase_mountain {
+  background: url(../../img/mountain.png);
+  background-size: cover;
+  border-radius: 8px 0 0 8px;
+}
+.showcase_mountain_item {
+  width: 88%;
+  margin: 0 auto;
+  padding: 30px 0;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 5px;
+  flex-direction: column;
+  height: 100%;
+}
+.showcase_recomended {
+  background-color: #fff;
+  border-radius: 0 8px 8px 0;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+.avatar h2 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #fff;
+}
+.avatar p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #fff;
+}
+
+.destinations h2 {
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #4592ff;
+  padding-bottom: 10px;
+}
+.destinations h1 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #fff;
+  width: 70%;
+  margin-bottom: 20px;
+}
+.destinations button {
+  background: #4592ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: #fff;
+  border: none;
+  width: 138px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.play_buttons {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 50px;
+}
+
+.play {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+}
+.play h3 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #fff;
+}
+.play p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #fff;
+  opacity: 0.4;
+}
+
+.showcase_recomended {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+@media (max-width: 1000px) {
+  .showcase_bottom {
+    width: 100%;
+    grid-template-columns: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .showcase_recomended {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
